@@ -1,0 +1,1 @@
+The package uses the "Concurrent Goal Assignment and Collision-Free Trajectory Generation for Multiple Aerial Robots" paper by Benjamin Gravell and Tyler Summers to develop python scripts that assign N aerial robots to N desired locations based on a one-to-one mapping that ensures minimal time-in-flight.
