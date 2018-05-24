@@ -9,8 +9,8 @@
     <param name="density" value="0.5"/> <!-- area-based density of agents in a rectangular area -->
     <param name="radius_agents" value="0.1"/> <!-- radius of the ball around the agents in meters (collision-free radius) -->
     <param name="vel_agents" value="0.3"/> <!-- velocity of the agents in meters/second -->
-    <param name="agent_locations_file" value="agent_locations.csv"/> <!-- csv file containing initial location of agents in 3D -->
-    <param name="goals_file" value="desired_goals.csv"/> <!-- csv file containing desired formation goals in 3D -->
+    <param name="agent_locations_file" value="agent_locations.csv"/> <!-- csv file containing initial location of agents in 2D -->
+    <param name="goals_file" value="desired_goals.csv"/> <!-- csv file containing desired formation goals in 2D -->
   </node>
 
 </launch>

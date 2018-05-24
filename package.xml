@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>cga_cfa</name>
+  <version>0.0.1</version>
+  <description>cga_cfa</description>
+
+  <maintainer email="snsafaoui@gmail.com">Sleiman Safaoui</maintainer>
+  <license>None</license>
+  <author>Sleiman Safaoui</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>message_generation</build_depend>
+  <run_depend>message_runtime</run_depend>
+  <run_depend>rospy</run_depend>
+
+</package>
