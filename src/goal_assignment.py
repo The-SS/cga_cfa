@@ -62,8 +62,8 @@ def assign_goal(current_pos, goal_pos, vel): # rearranges goals based on shortes
     return assigned_goals
 
 def main():
-    current_pos = import_CSV(agent_locations_file)
     goal_pos = import_CSV(goals_file)
+    current_pos = import_CSV(agent_locations_file)
     len_cur = len(current_pos)
     len_goal = len(goal_pos)
     if (len_cur != num_agents |  len_goal != num_agents): # check if number of current and goal positions is correct
