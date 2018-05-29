@@ -13,6 +13,14 @@ sleiman.safaoui@utdallas.edu
 
 Date:
 May 24, 2018
+
+Theory:
+Benjamin Gravell
+Email:
+bjgravell@gmail.com
+Tyler Summers
+Email:
+tyler.summers@utdallas.edu
 '''
 from __future__ import print_function
 import numpy as np
