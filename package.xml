@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>cga_cfa</name>
-  <version>0.0.1</version>
+  <version>0.1.0</version>
   <description>cga_cfa</description>
 
   <maintainer email="snsafaoui@gmail.com">Sleiman Safaoui</maintainer>

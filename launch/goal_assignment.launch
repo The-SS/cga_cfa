@@ -4,13 +4,15 @@
 
 <launch>
 
-  <node pkg="cga_cfa" type="goal_assignment.py" name="goal_assignment" output="screen">
+  <node pkg="cga_cfa" type="cga_cfa.py" name="cga_cfa" output="screen">
     <param name="num_agents" value="10"/> <!-- number of agents. this is also the number of goal locations -->
     <param name="density" value="0.5"/> <!-- area-based density of agents in a rectangular area -->
     <param name="radius_agents" value="0.1"/> <!-- radius of the ball around the agents in meters (collision-free radius) -->
-    <param name="vel_agents" value="0.3"/> <!-- velocity of the agents in meters/second -->
-    <param name="agent_locations_file" value="$(find cga_cfa)/src/agents_locations.csv"/> <!-- csv file containing initial location of agents in 2D -->
-    <param name="goals_file" value="$(find cga_cfa)/src/desired_goals.csv"/> <!-- csv file containing desired formation goals in 2D -->
+    <param name="speed_agents" value="0.3"/> <!-- velocity of the agents in meters/second -->
+    <param name="agent_locations_file" value="$(find cga_cfa)/config/agents_locations.csv"/> <!-- csv file containing initial location of agents in 2D -->
+    <param name="goals_file" value="$(find cga_cfa)/config/desired_goals.csv"/> <!-- csv file containing desired formation goals in 2D -->
+    <param name="t0" value="0"/> <!-- starting time of the agents -->
+
   </node>
 
 </launch>
