@@ -4,7 +4,7 @@
 
 <launch>
 
-  <node pkg="cga_cfa" type="cga_cfa.py" name="cga_cfa" output="screen">
+  <node pkg="cga_cfa" type="cga_cfa_ros.py" name="cga_cfa" output="screen">
     <param name="num_agents" value="10"/> <!-- number of agents. this is also the number of goal locations -->
     <param name="density" value="0.5"/> <!-- area-based density of agents in a rectangular area -->
     <param name="radius_agents" value="0.1"/> <!-- radius of the ball around the agents in meters (collision-free radius) -->

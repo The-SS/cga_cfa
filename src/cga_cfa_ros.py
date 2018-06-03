@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 '''
-Use the other scripts to find collision free goal assignments
+Use the other scripts to find collision free goal assignments.
+This script is ROS compatible. It it called through the launch file.
+!!!!!!!!!!! DEPENDS ON ROSPARAM !!!!!!!!!!!
 
 Author:
 Sleiman Safaoui:
@@ -24,21 +26,19 @@ tyler.summers@utdallas.edu
 from __future__ import print_function
 import numpy as np
 # import matplotlib.pyplot as plt
-# import rospy
-# import roslib
+import rospy
+import roslib
 from ccda import *
 from assign_goals import *
-import os
 
-path = os.path.abspath('../config')
-
-num_agents = 10
-density = 0.5
-radius_agents = 0.1
-speed_agents = 0.3
-agent_locations_file = path + '/agents_locations.csv'
-goals_file = path + '/desired_goals.csv'
-t0 = 0
+# load ros parameters
+num_agents = rospy.get_param("/cga_cfa/num_agents")
+density = rospy.get_param("/cga_cfa/density")
+radius_agents = rospy.get_param("/cga_cfa/radius_agents")
+agent_locations_file = rospy.get_param("/cga_cfa/agent_locations_file")
+goals_file = rospy.get_param("/cga_cfa/goals_file")
+speed_agents = rospy.get_param("/cga_cfa/speed_agents")
+t0 = rospy.get_param("/cga_cfa/t0")
 
 
 def main():
@@ -68,6 +68,5 @@ def main():
 if __name__ == '__main__':
     try:
         main()
-    except:
-        print('ERROR')
+    except rospy.ROSInterruptException:
         pass
